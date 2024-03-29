@@ -6,33 +6,42 @@
     <title>Baloo Rugs - Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@16,65.5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@16,65.5&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
-       <div class="custom-logo">
-        <h1>Baloo Rugs</h1>
+        <div class="header-container">
+            <button class="open-nav-btn">&#9776;</button> <!-- Button to open side menu -->
+            <div class="logo">Baloo Rugs</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="custom-rugs.html">Custom Rugs</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    
+    <!-- Side Navigation Menu -->
+    <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="close-nav-btn">&times;</a> <!-- Button to close side menu -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="custom-rugs.html">Custom Rugs</a></li>
                 <li><a href="store.html">Store</a></li>
+                <li><a href="custom-rugs.html">Custom Rugs</a></li> <!-- Added Custom Rugs link -->
             </ul>
         </nav>
-    </header>
-
+    </div>
+    
     <section id="about-preview">
         <h2>About Baloo Rugs</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <a href="about.html">Read more</a>
-    </section>
-
-    <section id="custom-rugs-preview">
-        <h2>Custom Rugs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a href="custom-rugs.html">Explore custom options</a>
     </section>
 
     <section id="store-preview">
@@ -40,9 +49,29 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <a href="store.html">Browse our collection</a>
     </section>
+   
+    <section id="custom-rugs-preview">
+        <h2>Custom Rugs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="custom-rugs.html">Explore custom options</a>
+    </section>
 
     <footer>
         <p>&copy; 2024 Baloo Rugs. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript code for opening and closing side navigation menu
+        function openNav() {
+            document.getElementById("side-nav").style.width = "250px"; // Adjust the width as needed
+        }
+
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+        }
+
+        document.querySelector(".open-nav-btn").addEventListener("click", openNav);
+        document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
+    </script>
 </body>
 </html>
