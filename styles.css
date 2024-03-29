@@ -1,0 +1,28 @@
+styles.css
+body {
+    font-family: 'Roboto', sans-serif;
+    color:
+    margin: 0;
+    padding: 0;
+    background-color: #03b5aa; 
+    color: #333;
+}
+
+header {
+    background-color: #7A306c;
+    color: #B2aa8e;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display:

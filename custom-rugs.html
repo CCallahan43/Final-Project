@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Baloo Rugs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Custom Rugs</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="custom-rugs.html">Custom Rugs</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="custom-rugs">
+        <h2>Submit Your Idea</h2>
+        <form id="custom-rug-form">
+            <label for="size">Size:</label><br>
+            <input type="text" id="size" name="size" required><br>
+
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+
+            <label for="reference-image">Reference Image:</label><br>
+            <input type="file" id="reference-image" name="reference-image" accept="image/*" required><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <input type="submit" value="Submit Idea">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Baloo Rugs. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
