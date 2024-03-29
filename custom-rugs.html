@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
+    <div class="header-container">
             <button class="open-nav-btn">&#9776;</button>
             <div class="custom-logo">Baloo Rugs</div>
             <nav id="main-nav">
@@ -34,31 +34,33 @@
         </nav>
     </div>
 
-    <section id="custom-rugs">
-        <h2>Submit Your Ideas!</h2>
+    <main>
+        <h1>Custom Rugs</h1>
         <form id="custom-rug-form">
-            <label for="size">Size:</label><br>
-            <input type="text" id="size" name="size" required><br>
-
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" maxlength="150" rows="15" cols="50" required></textarea><br>
-
-            <label for="reference-image">Reference Image:</label><br>
-            <input type="file" id="reference-image" name="reference-image" accept="image/*" required><br>
-
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" required><br>
-
-            <input type="submit" value="Submit Idea">
+            <label for="size">Size:</label>
+            <input type="text" id="size" name="size" required>
+            <br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <span id="char-count">0</span> / 150 characters
+            <br>
+            <label for="image">Image Reference:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
         </form>
-    </section>
-
+        <div id="verification-message"></div>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Baloo Rugs. All rights reserved.</p>
     </footer>
