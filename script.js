@@ -50,16 +50,13 @@ document.querySelector(".close-nav-btn").addEventListener("click", function() {
     document.getElementById("side-nav").style.width = "0";
 });
 
-// JavaScript code for opening and closing side navigation menu
-function openNav() {
-    document.getElementById("side-nav").style.width = "250px"; // Adjust the width as needed
-}
 
+function openNav() {
+    document.getElementById("side-nav").style.width = "250px"; 
 function closeNav() {
     document.getElementById("side-nav").style.width = "0";
 }
 
-// Event listeners to trigger openNav and closeNav functions
 document.querySelector(".open-nav-btn").addEventListener("click", openNav);
 document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
 

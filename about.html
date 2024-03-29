@@ -48,5 +48,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    
+        function openNav() {
+            document.getElementById("side-nav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+        }
+
+        document.querySelector(".open-nav-btn").addEventListener("click", openNav);
+        document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
+    </script>
+
 </body>
 </html>
