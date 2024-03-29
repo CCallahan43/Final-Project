@@ -1,28 +1,56 @@
-styles.css
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    color:
     margin: 0;
     padding: 0;
-    background-color: #03b5aa; 
-    color: #333;
 }
 
 header {
-    background-color: #7A306c;
-    color: #B2aa8e;
-    padding: 30px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display:
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+#about-preview,
+#custom-rugs-preview,
+#store-preview {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}

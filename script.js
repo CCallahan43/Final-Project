@@ -2,7 +2,7 @@ function submitCustomRugIdea(event) {
     event.preventDefault(); 
     const size = document.getElementById('size').value;
     const description = document.getElementById('description').value;
-    const referenceImage = document.getElementById('reference-image').files[0]; // Assuming only one image is allowed
+    const referenceImage = document.getElementById('reference-image').files[0];
     const contactInfo = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
