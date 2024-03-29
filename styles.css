@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: #Afb3F7;
     margin: 0;
     background-color: #3c454A;
@@ -10,9 +11,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #171A21;
     color: #Afb3f7;
+    
+}
+.custom-logo {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 16,
+      "SHLN" 65.5;
+      font-size: 45px;
+}
+.custom-logo h1{
+font-size: inherit;
+
 }
 
 nav ul {
@@ -57,13 +73,14 @@ footer p {
 }
 
 body a {
-    text-decoration: none !important;
-    color: inherit !important;
+    text-decoration: none;
+    color: inherit;
 
 }
 
 
 body a:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
     color: #F95738;
 }
+ 
