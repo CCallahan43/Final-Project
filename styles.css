@@ -1,10 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -24,9 +18,9 @@ header {
     color: #Afb3f7;
 }
 
-.logo {
+.custom-logo {
     font-family: "Honk", sans-serif;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     color: #fff;
 }
@@ -106,12 +100,10 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Section styles */
 section {
     padding: 20px;
 }
 
-/* Footer styles */
 footer {
     background-color: #171A21;
     color: white;
