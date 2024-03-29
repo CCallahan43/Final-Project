@@ -23,6 +23,19 @@
             </nav>
         </div>
     </header>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="https://i.postimg.cc/43BrqJqT/Dragonite.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+          <img src="https://i.postimg.cc/2y8dJDsg/rayquaza.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+          <img src="https://i.postimg.cc/28Q9gkLX/charizard-rug.jpg" alt="Slide 3">
+        </div>
+      </div>
+      
     
     <div id="side-nav" class="side-nav">
         <a href="javascript:void(0)" class="close-nav-btn">&times;</a>
@@ -36,19 +49,44 @@
     
     <section id="about-preview">
         <h2>About Baloo Rugs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>At Baloo Rugs, we're dedicated to transforming living spaces into vibrant 
+            sanctuaries for discerning nerds. Our mission is to blend creativity, 
+            craftsmanship, and geek culture to craft unique rugs that not only elevate
+             room aesthetics but also celebrate individuality and passion. With an 
+             unwavering commitment to quality and innovation, we strive to provide 
+             our customers with rugs that not only adorn their floors but also ignite
+              imagination, spark conversation, and amplify the essence of their nerdy
+               lifestyles. Together, we're weaving worlds, one rug at a time, to create
+                spaces that inspire and delight.</p>
         <a href="about.html">Read more</a>
     </section>
 
     <section id="store-preview">
         <h2>Store</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Welcome to Baloo Rugs, your one-stop destination for premium 
+            rugs designed to elevate your space with a touch of geek chic. 
+            Step into our store and immerse yourself in a world where creativity 
+            meets craftsmanship, where every rug tells a unique story inspired by
+             the rich tapestry of nerd culture. From pixelated wonders to cosmic
+              odysseys, our curated collection offers something for every 
+              aficionado, transforming ordinary floors into extraordinary realms
+               of imagination. Discover the perfect rug to complement your style
+                and express your passions with pride. At Baloo Rugs, we're not 
+                just selling rugs; we're crafting connections, one thread at a 
+                time.</p>
         <a href="store.html">Browse our collection</a>
     </section>
    
     <section id="custom-rugs-preview">
         <h2>Custom Rugs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Embark on a personalized journey with Baloo Rugs' 
+            custom rug entry. Our bespoke service allows you to transform your
+            imagination into a tangible masterpiece that reflects your unique 
+            personality and style. From intricate designs to tailored dimensions, 
+            our expert artisans work tirelessly to bring your vision to life, 
+            ensuring every stitch is a testament to your creativity. Elevate your 
+            space with a rug that speaks volumes about who you are. Discover the 
+            power of customization with Baloo Rugs today.</p>
         <a href="custom-rugs.html">Explore custom options</a>
     </section>
 
@@ -57,13 +95,6 @@
     </h3>
     <p id="remaining-days"></p>
     </section>
-         
-     
-
-    <footer>
-        <p>&copy; 2024 Baloo Rugs. All rights reserved.</p>
-    </footer>
-
     <script> 
          
         let today = new Date(); 
@@ -93,13 +124,12 @@
           (dayMilliseconds) 
         ); 
         let remainingDaysElement = document.getElementById("remaining-days");
-    remainingDaysElement.textContent = "There are " + remainingDays + " days remaining until our First Drop!";   
+    remainingDaysElement.textContent = "There are " + remainingDays + " days remaining until the First Drop!";   
        
-        document.write("There are " + remainingDays + 
-                       " days remaining until First Drop."); 
-    </script>
-   
-   <script>
+        
+    </script>     
+     
+     <script>
     
         function openNav() {
             document.getElementById("side-nav").style.width = "250px";
@@ -112,5 +142,8 @@
         document.querySelector(".open-nav-btn").addEventListener("click", openNav);
         document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
     </script>
-</body>
+  
+     <footer>
+        <p>&copy; 2024 Baloo Rugs. All rights reserved.</p>
+    </footer>
 </html>

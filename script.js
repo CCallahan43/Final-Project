@@ -39,6 +39,10 @@ function submitCustomRugIdea(event) {
         alert('Failed to submit custom rug idea. Please try again later.');
     });
 }
+}
+
+
+
 
 document.getElementById('custom-rug-form').addEventListener('submit', submitCustomRugIdea);
 
