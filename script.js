@@ -164,12 +164,7 @@ fetch("https://getpantry.cloud/apiv1/pantry/75e02e92-c82f-40d6-9f01-721ed8e560bf
     const verificationMessage = document.getElementById("verification-message");
 
     form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the form from submitting
-
-        // Your validation logic goes here
-        // For example, you can check if the required fields are filled
-        // If validation passes, display the verification message
-        // Otherwise, show an error message or handle validation as needed
+        event.preventDefault();
 
         verificationMessage.textContent = "Your custom rug submission has been received. Thank you!";
     });

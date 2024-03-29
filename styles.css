@@ -54,10 +54,10 @@ header {
     color: #fff;
 }
 
-/* CSS styles */
+
 form {
-    max-width: 500px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 500px; 
+    margin: 0 auto; 
     padding: 20px;
     background-color: #171A21;
     border-radius: 8px;
@@ -83,7 +83,7 @@ form textarea {
 }
 
 form textarea {
-    height: 100px; /* Adjust the height of the textarea */
+    height: 100px; 
 }
 
 form span {
@@ -208,8 +208,8 @@ a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 20px; /* Spacing between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
   }
   
   .grid-item {
@@ -217,8 +217,8 @@ a:hover {
   }
   
   .grid-item img {
-    width: 100%; /* Make the image fill the grid item */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
   
   .grid-item h3 {
@@ -233,7 +233,7 @@ a:hover {
   .grid-item a {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #007bff; /* Example color, customize as needed */
+    background-color: #007bff; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
