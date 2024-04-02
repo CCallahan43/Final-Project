@@ -39,7 +39,7 @@ function submitCustomRugIdea(event) {
         alert('Failed to submit custom rug idea. Please try again later.');
     });
 }
-}
+
 
 
 
@@ -58,25 +58,32 @@ document.querySelector(".close-nav-btn").addEventListener("click", function() {
 
 
 function openNav() {
-    document.getElementById("side-nav").style.width = "250px"; 
-function closeNav() {
-    document.getElementById("side-nav").style.width = "0";
+  document.getElementById("side-nav").style.width = "250px";
 }
 
-document.querySelector(".open-nav-btn").addEventListener("click", openNav);
-document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
+function closeNav() {
+  document.getElementById("side-nav").style.width = "0";
+}
 
-const descriptionInput = document.getElementById("description");
-const charCountDisplay = document.getElementById("char-count");
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector(".open-nav-btn").addEventListener("click", openNav);
+  document.querySelector(".close-nav-btn").addEventListener("click", closeNav);
+  
+  const descriptionInput = document.getElementById("description");
+  const charCountDisplay = document.getElementById("char-count");
 
-descriptionInput.addEventListener("input", function() {
-    const remainingChars = 150 - this.value.length;
-    charCountDisplay.textContent = `Characters remaining: ${remainingChars}`;
-    
-    if (remainingChars < 0) {
-        this.value = this.value.slice(0, 150);
-    }
+  if (descriptionInput && charCountDisplay) {
+      descriptionInput.addEventListener("input", function() {
+          const remainingChars = 150 - this.value.length;
+          charCountDisplay.textContent = `Characters remaining: ${remainingChars}`;
+          
+          if (remainingChars < 0) {
+              this.value = this.value.slice(0, 150);
+          }
+      });
+  }
 });
+
 
 
 let today = new Date();
@@ -171,8 +178,8 @@ fetch("https://getpantry.cloud/apiv1/pantry/75e02e92-c82f-40d6-9f01-721ed8e560bf
 });
 
 
-onSubmit = function(e){
-  var newMessage = {
+onSubmit = function(e)
+  {var newMessage = {
       msg_sender: this.state.msg_sender,
       msg_content: this.state.msg_content
  }
@@ -182,5 +189,4 @@ onSubmit = function(e){
   })
   .then(function(res){ console.log(res.json()) })
   .catch(function(err){ console.log("Error! " + err) })
-
-};
+  }
