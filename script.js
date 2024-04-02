@@ -169,3 +169,18 @@ fetch("https://getpantry.cloud/apiv1/pantry/75e02e92-c82f-40d6-9f01-721ed8e560bf
         verificationMessage.textContent = "Your custom rug submission has been received. Thank you!";
     });
 });
+
+
+onSubmit = function(e){
+  var newMessage = {
+      msg_sender: this.state.msg_sender,
+      msg_content: this.state.msg_content
+ }
+  fetch('http://localhost:4000/message', {
+     method: 'POST',
+     body: newMessage
+  })
+  .then(function(res){ console.log(res.json()) })
+  .catch(function(err){ console.log("Error! " + err) })
+
+};
