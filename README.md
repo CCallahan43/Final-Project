@@ -12,3 +12,4 @@ I sincerely hope that you enjoy this website as it is soon to be the first of ma
 
 Collin Callahan 2024
 
+Note: Please extract files when downloading clone before opening 
